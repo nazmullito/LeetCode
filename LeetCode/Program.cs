@@ -11,9 +11,23 @@ public class Program
         #endregion
 
         #region Check Palindrome Without Converting to String O(n)
-        Console.WriteLine("Enter Number:");
-        int number = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(CheckPalindromeWithoutConvertingtoString.IsPalindrome(number));
+        //Console.WriteLine("Enter Number:");
+        //int number = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine(CheckPalindromeWithoutConvertingtoString.IsPalindrome(number));
+        #endregion
+
+        #region Two Sum
+        Console.WriteLine("Enter array elements seperated by space");
+        int[] inputnumbers = Array.ConvertAll(Console.ReadLine()!.Split(' '), Convert.ToInt32);
+        Console.WriteLine("Enter target");
+        int target = Convert.ToInt32(Console.ReadLine());
+        var elements = TwoSumUsingDictionary.GetTwoSumUsingDictionary(inputnumbers, target);
+
+        Console.WriteLine("Two number of target sum is: ");
+        foreach (int element in elements)
+        {
+            Console.WriteLine(element);
+        }
         #endregion
     }
 }
