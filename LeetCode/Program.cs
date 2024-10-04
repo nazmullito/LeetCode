@@ -17,17 +17,24 @@ public class Program
         #endregion
 
         #region Two Sum
+        //Console.WriteLine("Enter array elements seperated by space");
+        //int[] inputnumbers = Array.ConvertAll(Console.ReadLine()!.Split(' '), Convert.ToInt32);
+        //Console.WriteLine("Enter target");
+        //int target = Convert.ToInt32(Console.ReadLine());
+        //var elements = TwoSumUsingDictionary.GetTwoSumUsingDictionary(inputnumbers, target);
+
+        //Console.WriteLine("Two number of target sum is: ");
+        //foreach (int element in elements)
+        //{
+        //    Console.WriteLine(element);
+        //}
+        #endregion
+
+        #region 121. Best Time to Buy and Sell Stock
         Console.WriteLine("Enter array elements seperated by space");
         int[] inputnumbers = Array.ConvertAll(Console.ReadLine()!.Split(' '), Convert.ToInt32);
-        Console.WriteLine("Enter target");
-        int target = Convert.ToInt32(Console.ReadLine());
-        var elements = TwoSumUsingDictionary.GetTwoSumUsingDictionary(inputnumbers, target);
-
-        Console.WriteLine("Two number of target sum is: ");
-        foreach (int element in elements)
-        {
-            Console.WriteLine(element);
-        }
+        var profit = BestTimetoBuyandSellStock.GetProfit(inputnumbers);
+        Console.WriteLine(profit);
         #endregion
     }
 }
