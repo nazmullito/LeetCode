@@ -8,15 +8,15 @@
         {
             int profit = 0;
 
-            for (int smallestNumberInddex = 0, nextIndex = smallestNumberInddex + 1; nextIndex < prices.Length; nextIndex++)
+            for (int smallestNumberIndex = 0, nextIndex = smallestNumberIndex + 1; nextIndex < prices.Length; nextIndex++)
             {
-                if (prices[smallestNumberInddex] > prices[nextIndex])
+                if (prices[smallestNumberIndex] > prices[nextIndex])
                 {
-                    smallestNumberInddex = nextIndex;
+                    smallestNumberIndex = nextIndex;
                 }
                 else
                 {
-                    int difference = prices[nextIndex] - prices[smallestNumberInddex];
+                    int difference = prices[nextIndex] - prices[smallestNumberIndex];
                     if (difference > profit)
                         profit = difference;
                 }
@@ -26,7 +26,7 @@
         }
     }
 
-    //Make First index number as smalles one and set 2nd index number as nextIndex
+    //Make First index number as smaller one and set 2nd index number as nextIndex
     //If Check smallestNumberInddex value is greate than nextIndex value and assign nextIndex to smallestNumberInddex and Increment nextIndex
     //else calculate profit based on difference is greated than profit initial value
 }
