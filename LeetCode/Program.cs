@@ -38,12 +38,17 @@ public class Program
         #endregion
 
         #region 1991. Find the Middle Index in Array
-        Console.WriteLine("Enter array elements seperated by space");
-        int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(" "), Convert.ToInt32);
-        var middleIndex = FindMiddleIndexInArray.FindMiddleIndex(inputNumbers);
-        Console.WriteLine(middleIndex);
+        //Console.WriteLine("Enter array elements seperated by space");
+        //int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(" "), Convert.ToInt32);
+        //var middleIndex = FindMiddleIndexInArray.FindMiddleIndex(inputNumbers);
+        //Console.WriteLine(middleIndex);
         #endregion
 
-
+        #region 344. Reverse String
+        Console.WriteLine("Enter string for reverse");
+        char[] input = Console.ReadLine()!.ToCharArray();
+        var reversestring = ReverseString.GetReverseString(input);
+        Console.WriteLine(reversestring);
+        #endregion
     }
 }
