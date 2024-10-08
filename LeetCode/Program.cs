@@ -31,10 +31,19 @@ public class Program
         #endregion
 
         #region 121. Best Time to Buy and Sell Stock
-        Console.WriteLine("Enter array elements seperated by space");
-        int[] inputnumbers = Array.ConvertAll(Console.ReadLine()!.Split(' '), Convert.ToInt32);
-        var profit = BestTimetoBuyandSellStock.GetProfit(inputnumbers);
-        Console.WriteLine(profit);
+        //Console.WriteLine("Enter array elements seperated by space");
+        //int[] inputnumbers = Array.ConvertAll(Console.ReadLine()!.Split(' '), Convert.ToInt32);
+        //var profit = BestTimetoBuyandSellStock.GetProfit(inputnumbers);
+        //Console.WriteLine(profit);
         #endregion
+
+        #region 1991. Find the Middle Index in Array
+        Console.WriteLine("Enter array elements seperated by space");
+        int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(" "), Convert.ToInt32);
+        var middleIndex = FindMiddleIndexInArray.FindMiddleIndex(inputNumbers);
+        Console.WriteLine(middleIndex);
+        #endregion
+
+
     }
 }
