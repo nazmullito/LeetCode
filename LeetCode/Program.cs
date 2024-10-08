@@ -16,7 +16,7 @@ public class Program
         //Console.WriteLine(CheckPalindromeWithoutConvertingtoString.IsPalindrome(number));
         #endregion
 
-        #region Two Sum
+        #region 1.Two Sum
         //Console.WriteLine("Enter array elements seperated by space");
         //int[] inputnumbers = Array.ConvertAll(Console.ReadLine()!.Split(' '), Convert.ToInt32);
         //Console.WriteLine("Enter target");
