@@ -45,10 +45,19 @@ public class Program
         #endregion
 
         #region 344. Reverse String
-        Console.WriteLine("Enter string for reverse");
-        char[] input = Console.ReadLine()!.ToCharArray();
-        var reversestring = ReverseString.GetReverseString(input);
-        Console.WriteLine(reversestring);
+        //Console.WriteLine("Enter string for reverse");
+        //char[] input = Console.ReadLine()!.ToCharArray();
+        //var reversestring = ReverseString.GetReverseString(input);
+        //Console.WriteLine(reversestring);
+        #endregion
+
+        #region 7.Reverse Integer
+        Console.Write("Enter a Integer Number");
+        Console.ReadLine();
+        var inputNo = Convert.ToInt32(Console.ReadLine());
+        int reverseNumber = ReverseInteger.GetReverseInteger(inputNo);
+        Console.WriteLine(reverseNumber);
         #endregion
     }
 }
+
