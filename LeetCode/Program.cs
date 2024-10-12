@@ -60,9 +60,19 @@ public class Program
         #endregion
 
         #region 26. Remove Duplicates from Sorted Array
+        //Console.WriteLine("Enter array elements seperated by space");
+        //int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //var totalUniqueNumber = RemoveDuplicateFromSortedArray.GetUniqueCountByRemoveDuplicateFromSortedArray(inputNumbers);
+        //for (int i = 0; i < totalUniqueNumber; i++)
+        //{
+        //    Console.WriteLine(inputNumbers[i] + " ");
+        //}
+        #endregion
+
+        #region 80. Remove Duplicates from Sorted Array II
         Console.WriteLine("Enter array elements seperated by space");
         int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
-        var totalUniqueNumber = RemoveDuplicateFromSortedArray.GetUniqueCountByRemoveDuplicateFromSortedArray(inputNumbers);
+        var totalUniqueNumber = RemoveDuplicateFromSortedArrayV2.GetLengthOfArrayByRemoveDuplicateFromSortedArray(inputNumbers);
         for (int i = 0; i < totalUniqueNumber; i++)
         {
             Console.WriteLine(inputNumbers[i] + " ");
