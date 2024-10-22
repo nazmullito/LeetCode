@@ -80,14 +80,20 @@ public class Program
         #endregion
 
         #region 27. Remove Element
-        Console.WriteLine("Enter array elements seperated by space");
-        int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //Console.WriteLine("Enter array elements seperated by space");
+        //int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int inputValue = Convert.ToInt32(Console.ReadLine());
+        //var totalUniqueNumber = RemoveElement.GetRemoveElement(inputNumbers, inputValue);
+        //for (int i = 0; i < totalUniqueNumber; i++)
+        //{
+        //    Console.WriteLine(inputNumbers[i] + " ");
+        //}
+        #endregion
+
+        #region 509. Fibonacci Number
+        Console.WriteLine("Enter position to get Fibonacci Number");
         int inputValue = Convert.ToInt32(Console.ReadLine());
-        var totalUniqueNumber = RemoveElement.GetRemoveElement(inputNumbers, inputValue);
-        for (int i = 0; i < totalUniqueNumber; i++)
-        {
-            Console.WriteLine(inputNumbers[i] + " ");
-        }
+        Console.WriteLine(FibonacciNumber.GetFibonacciNumber(inputValue));
         #endregion
     }
 }
