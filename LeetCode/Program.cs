@@ -91,9 +91,18 @@ public class Program
         #endregion
 
         #region 509. Fibonacci Number
-        Console.WriteLine("Enter position to get Fibonacci Number");
-        int inputValue = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(FibonacciNumber.GetFibonacciNumber(inputValue));
+        //Console.WriteLine("Enter position to get Fibonacci Number");
+        //int inputValue = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine(FibonacciNumber.GetFibonacciNumber(inputValue));
+        #endregion
+
+        #region 1423. Maximum Points You Can Obtain from Cards
+        Console.WriteLine("Enter array elements seperated by comma");
+        int[] cardPoints = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        int numberofCards = Convert.ToInt32(Console.ReadLine());
+        int maximumPoints = MaximumPointsObtainFromCards.GetMaximumPointsObtainFromCards(cardPoints, numberofCards);
+        Console.WriteLine(maximumPoints);
+
         #endregion
     }
 }

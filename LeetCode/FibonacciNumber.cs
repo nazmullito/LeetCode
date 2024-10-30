@@ -4,6 +4,7 @@
     {
         public static int GetFibonacciNumber(int n)
         {
+            //** Linear time complexity O(n) using dynamic programming.
             if (n == 0) return 0;
             if (n == 1) return 1;
             int a = 0;
