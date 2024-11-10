@@ -97,12 +97,19 @@ public class Program
         #endregion
 
         #region 1423. Maximum Points You Can Obtain from Cards
-        Console.WriteLine("Enter array elements seperated by comma");
-        int[] cardPoints = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
-        int numberofCards = Convert.ToInt32(Console.ReadLine());
-        int maximumPoints = MaximumPointsObtainFromCards.GetMaximumPointsObtainFromCards(cardPoints, numberofCards);
-        Console.WriteLine(maximumPoints);
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] cardPoints = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int numberofCards = Convert.ToInt32(Console.ReadLine());
+        //int maximumPoints = MaximumPointsObtainFromCards.GetMaximumPointsObtainFromCards(cardPoints, numberofCards);
+        //Console.WriteLine(maximumPoints);
 
+        #endregion
+
+        #region 3. Longest Substring Without Repeating Characters
+        Console.WriteLine("Enter string");
+        string word = Console.ReadLine()!;
+        int longestUniqueSubstrLength = LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(word);
+        Console.WriteLine(longestUniqueSubstrLength);
         #endregion
     }
 }
