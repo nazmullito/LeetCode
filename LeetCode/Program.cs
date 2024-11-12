@@ -106,10 +106,17 @@ public class Program
         #endregion
 
         #region 3. Longest Substring Without Repeating Characters
-        Console.WriteLine("Enter string");
-        string word = Console.ReadLine()!;
-        int longestUniqueSubstrLength = LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(word);
-        Console.WriteLine(longestUniqueSubstrLength);
+        //Console.WriteLine("Enter string");
+        //string word = Console.ReadLine()!;
+        //int longestUniqueSubstrLength = LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(word);
+        //Console.WriteLine(longestUniqueSubstrLength);
+        #endregion
+
+        #region 217. Contains Duplicate
+        Console.WriteLine("Enter array elements seperated by space");
+        int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        bool isDuplicate = CheckDuplicate.ContainsDuplicate(inputNumbers);
+        Console.WriteLine(isDuplicate);
         #endregion
     }
 }
