@@ -113,9 +113,19 @@ public class Program
         #endregion
 
         #region 217. Contains Duplicate
-        Console.WriteLine("Enter array elements seperated by space");
-        int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
-        bool isDuplicate = CheckDuplicate.ContainsDuplicate(inputNumbers);
+        //Console.WriteLine("Enter array elements seperated by space");
+        //int[] inputNumbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //bool isDuplicate = CheckDuplicate.ContainsDuplicate(inputNumbers);
+        //Console.WriteLine(isDuplicate);
+        ////int DuplicateNumber = CheckDuplicate.ReturnDuplicate(inputNumbers);
+        ////Console.WriteLine(DuplicateNumber);
+        #endregion
+
+        #region 219. Contains Duplicate II
+        Console.WriteLine("Enter array elements seperated by comma");
+        int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        int intvalue = Convert.ToInt32(Console.ReadLine());
+        bool isDuplicate = ContainsDuplicateTwo.ContainsNearbyDuplicate(numbers, intvalue);
         Console.WriteLine(isDuplicate);
         #endregion
     }

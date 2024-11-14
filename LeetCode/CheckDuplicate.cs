@@ -35,5 +35,29 @@
             return true;
         }
 
+        public static int ReturnDuplicate(int[] nums)
+        {
+            Dictionary<int, int> dict = [];
+            int count = 1;
+            int duplicateNumber = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (!dict.ContainsKey(nums[i]))
+                {
+                    dict.Add(nums[i], i);
+                    if (count == nums.Length)
+                        return 0;
+                    count++;
+                }
+                else
+                {
+                    duplicateNumber = nums[i];
+                    break;
+                }
+            }
+            return duplicateNumber;
+        }
+
     }
 }
