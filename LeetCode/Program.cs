@@ -122,12 +122,20 @@ public class Program
         #endregion
 
         #region 219. Contains Duplicate II
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int intvalue = Convert.ToInt32(Console.ReadLine());
+        //bool isDuplicate = ContainsDuplicateTwo.ContainsNearbyDuplicate(numbers, intvalue);
+        //Console.WriteLine(isDuplicate);
+        #endregion
+
+        #region 128. Longest Consecutive Sequence
         Console.WriteLine("Enter array elements seperated by comma");
         int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
-        int intvalue = Convert.ToInt32(Console.ReadLine());
-        bool isDuplicate = ContainsDuplicateTwo.ContainsNearbyDuplicate(numbers, intvalue);
-        Console.WriteLine(isDuplicate);
+        int longestConsecutiveNumber = LongestConsecutiveSequence.LongestConsecutive(numbers);
+        Console.WriteLine(longestConsecutiveNumber);
         #endregion
+
     }
 }
 
