@@ -130,10 +130,17 @@ public class Program
         #endregion
 
         #region 128. Longest Consecutive Sequence
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int longestConsecutiveNumber = LongestConsecutiveSequence.LongestConsecutive(numbers);
+        //Console.WriteLine(longestConsecutiveNumber);
+        #endregion
+
+        #region 414. Third Maximum Number
         Console.WriteLine("Enter array elements seperated by comma");
         int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
-        int longestConsecutiveNumber = LongestConsecutiveSequence.LongestConsecutive(numbers);
-        Console.WriteLine(longestConsecutiveNumber);
+        int thirdMax = ThirdMaximumNumber.ThirdMax(numbers);
+        Console.WriteLine(thirdMax);
         #endregion
 
     }
