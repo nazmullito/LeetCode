@@ -137,10 +137,21 @@ public class Program
         #endregion
 
         #region 414. Third Maximum Number
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int thirdMax = ThirdMaximumNumber.ThirdMax(numbers);
+        //Console.WriteLine(thirdMax);
+        #endregion
+
+        #region 167. Two Sum II - Input Array Is Sorted
         Console.WriteLine("Enter array elements seperated by comma");
         int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
-        int thirdMax = ThirdMaximumNumber.ThirdMax(numbers);
-        Console.WriteLine(thirdMax);
+        int target = Convert.ToInt32(Console.ReadLine());
+        int[] targetValueIndexes = TwoSumSortedInputArray.TwoSum(numbers, target);
+        for (int i = 0; i < targetValueIndexes.Length; i++)
+        {
+            Console.WriteLine(targetValueIndexes[i] + " ");
+        }
         #endregion
 
     }
