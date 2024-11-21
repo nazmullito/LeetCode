@@ -144,16 +144,23 @@ public class Program
         #endregion
 
         #region 167. Two Sum II - Input Array Is Sorted
-        Console.WriteLine("Enter array elements seperated by comma");
-        int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
-        int target = Convert.ToInt32(Console.ReadLine());
-        int[] targetValueIndexes = TwoSumSortedInputArray.TwoSum(numbers, target);
-        for (int i = 0; i < targetValueIndexes.Length; i++)
-        {
-            Console.WriteLine(targetValueIndexes[i] + " ");
-        }
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int target = Convert.ToInt32(Console.ReadLine());
+        //int[] targetValueIndexes = TwoSumSortedInputArray.TwoSum(numbers, target);
+        //for (int i = 0; i < targetValueIndexes.Length; i++)
+        //{
+        //    Console.WriteLine(targetValueIndexes[i] + " ");
+        //}
         #endregion
 
+        #region 125. Valid Palindrome
+        Console.WriteLine("Enter a string to check it is a palindrome or not");
+        string strInput = Console.ReadLine()!;
+        bool isPalindrome = ValidPalindrome.IsPalindrome(strInput);
+        Console.WriteLine(isPalindrome);
+
+        #endregion
     }
 }
 
