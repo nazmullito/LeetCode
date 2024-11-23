@@ -155,11 +155,27 @@ public class Program
         #endregion
 
         #region 125. Valid Palindrome
-        Console.WriteLine("Enter a string to check it is a palindrome or not");
-        string strInput = Console.ReadLine()!;
-        bool isPalindrome = ValidPalindrome.IsPalindrome(strInput);
-        Console.WriteLine(isPalindrome);
+        //Console.WriteLine("Enter a string to check it is a palindrome or not");
+        //string strInput = Console.ReadLine()!;
+        //bool isPalindrome = ValidPalindrome.IsPalindrome(strInput);
+        //Console.WriteLine(isPalindrome);
 
+        #endregion
+
+        #region 242. Valid Anagram
+        //Console.WriteLine("Enter your first string");
+        //string firstInput = Console.ReadLine()!;
+        //Console.WriteLine("Enter your second string");
+        //string secondInput = Console.ReadLine()!;
+        //bool IsAnagram = ValidAnagram.IsAnagram(firstInput, secondInput);
+        //Console.WriteLine(IsAnagram);
+        #endregion
+
+        #region 58. Length of Last Word
+        Console.WriteLine("Enter your string");
+        string input = Console.ReadLine()!;
+        int wordlength = GetLengthofLastWord.LengthOfLastWord(input);
+        Console.WriteLine(wordlength);
         #endregion
     }
 }
