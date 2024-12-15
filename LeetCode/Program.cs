@@ -172,10 +172,78 @@ public class Program
         #endregion
 
         #region 58. Length of Last Word
-        Console.WriteLine("Enter your string");
-        string input = Console.ReadLine()!;
-        int wordlength = GetLengthofLastWord.LengthOfLastWord(input);
-        Console.WriteLine(wordlength);
+        //Console.WriteLine("Enter your string");
+        //string input = Console.ReadLine()!;
+        //int wordlength = GetLengthofLastWord.LengthOfLastWord(input);
+        //Console.WriteLine(wordlength);
+        #endregion
+
+        #region 392. Is Subsequence
+
+        //Console.WriteLine("Enter your first string");
+        //string firstInput = Console.ReadLine()!;
+        //Console.WriteLine("Enter your second string");
+        //string secondInput = Console.ReadLine()!;
+        //bool IsSubsequence = CheckSubsequence.IsSubsequence(firstInput, secondInput);
+        //Console.WriteLine(IsSubsequence);
+        #endregion
+
+        #region 88. Merge Sorted Array
+
+        //Console.WriteLine("Enter first array elements seperated by comma");
+        //int[] firstInput = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int firstInputLength = Convert.ToInt32(Console.ReadLine())!;
+
+        //Console.WriteLine("Enter second array elements seperated by comma");
+        //int[] secondInput = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int secondInputLength = Convert.ToInt32(Console.ReadLine())!;
+
+        //MergeSortedArray.Merge(firstInput, firstInputLength, secondInput, secondInputLength);
+        //for (int i = 0; i < firstInput.Length; i++)
+        //{
+        //    Console.WriteLine(firstInput[i] + " ");
+        //}
+        #endregion
+
+        #region 33. Search in Rotated Sorted Array
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] nums = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //Console.WriteLine("Enter target value");
+        //int target = Convert.ToInt32(Console.ReadLine());
+        //int targetIndex = SearchInRotatedSortedArray.Search(nums, target);
+        //Console.WriteLine(targetIndex);
+        #endregion
+
+        #region 53. Maximum Subarray
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] nums = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //int maxSubArray = MaximumSubarray.MaxSubArray(nums);
+        //Console.WriteLine(maxSubArray);
+        #endregion
+
+        #region 189. Rotate Array
+        //Console.WriteLine("Enter array elements seperated by comma");
+        //int[] nums = Array.ConvertAll(Console.ReadLine()!.Split(","), Convert.ToInt32);
+        //Console.WriteLine("Enter value for rotate from right");
+        //int target = Convert.ToInt32(Console.ReadLine());
+        //RotateArray.Rotate(nums, target);
+        //string result = "";
+        //foreach (var number in nums)
+        //{
+        //    if (!string.IsNullOrEmpty(result))
+        //    {
+        //        result += ", ";
+        //    }
+        //    result += number;
+        //}
+        //Console.WriteLine(result);
+        #endregion
+
+        #region 70. Climbing Stairs using Memoization
+        Console.WriteLine("Enter nth number");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int totalsWays = ClimbingStairsUsingMemoization.ClimbStairs(n);
+        Console.WriteLine(totalsWays);
         #endregion
     }
 }
