@@ -240,9 +240,16 @@ public class Program
         #endregion
 
         #region 70. Climbing Stairs using Memoization
+        //Console.WriteLine("Enter nth number");
+        //int n = Convert.ToInt32(Console.ReadLine());
+        //int totalsWays = ClimbingStairsUsingMemoization.ClimbStairs(n);
+        //Console.WriteLine(totalsWays);
+        #endregion
+
+        #region 70. Climbing Stairs using Tabulation
         Console.WriteLine("Enter nth number");
         int n = Convert.ToInt32(Console.ReadLine());
-        int totalsWays = ClimbingStairsUsingMemoization.ClimbStairs(n);
+        int totalsWays = ClimbingStairsUsingTabulation.ClimbStairs(n);
         Console.WriteLine(totalsWays);
         #endregion
     }

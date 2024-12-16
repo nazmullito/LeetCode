@@ -2,7 +2,7 @@
 {
     public class ClimbingStairsUsingMemoization
     {
-        public int ClimbStairs(int n)
+        public static int ClimbStairs(int n)
         {
             int[] ways = new int[n + 1];
             Array.Fill(ways, -1);
